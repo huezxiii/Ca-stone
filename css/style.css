@@ -1,0 +1,500 @@
+:root {
+  --site-color-1: #054a7a;
+  --site-color-2: #94c8ea;
+  --site-color-3: #05385a;
+  --site-color-4: #0472b8;
+  --site-light: #ffffff;
+  --site-dark: #000000;
+  --site-highlight: #7cbee2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+
+.hero {
+  background: url("../images/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.hero .hero-booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .hero-booking .btn a {
+  text-decoration: none;
+  color: var(--site-light);
+}
+
+.hero .hero-booking h1 {
+  font-size: 55px;
+  color: var(--site-color-2);
+}
+
+.hero .hero-booking .btn {
+  font-size: 30px;
+  border-radius: 30px;
+  background: var(--site-highlight);
+  border-color: var(--site-color-1);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero * {
+  z-index: 10;
+}
+
+/* Navbar */
+
+.navbar {
+  background: var(--site-color-1);
+}
+
+.navbar img {
+  color: var(--site-light);
+  height: 75px;
+}
+
+.navbar .nav-logo {
+  color: var(--site-light);
+}
+
+.navbar a {
+  color: var(--site-light);
+  padding: 5px;
+  text-decoration: none;
+}
+
+.navbar button {
+  background: var(--site-color-4);
+  color: var(--site-light);
+}
+
+.navbar ul li a:hover {
+  background: var(--site-color-4);
+  color: var(--site-light);
+  border-radius: 5px;
+}
+
+.nav-item .active {
+  background: var(--site-color-2);
+  border-radius: 5px;
+}
+
+#appointment-btn {
+  background: var(--site-highlight);
+  border-color: var(---site-highlight);
+  border-radius: 30px;
+}
+
+/* Modal */
+
+.modal-header {
+  background: var(--site-color-1);
+}
+
+.modal-header h4 {
+  color: var(--site-light);
+}
+
+.modal-body a {
+  color: var(--site-light);
+  text-decoration: none;
+}
+
+.modal-body button {
+  background: var(--site-color-1);
+  border-radius: 5px;
+  border-style: none;
+  color: var(--site-light);
+}
+.modal-body button:hover {
+  background: var(--site-color-2);
+  color: var(--site-color-1);
+}
+
+/* Index - Services */
+
+.card h3 {
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--site-light);
+  border-radius: 5px;
+}
+
+/* Index - Testimonials */
+
+.testimonials-container {
+  margin-top: 30px;
+}
+.testimonials {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: var(--site-highlight);
+}
+.testimonial {
+  margin-bottom: 30px;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+}
+.testimonial-name {
+  font-size: 18px;
+  color: #212529;
+}
+.testimonial-date {
+  font-size: 14px;
+  color: #6c757d;
+}
+.testimonial-text {
+  font-size: 16px;
+  color: #212529;
+}
+.testimonial-rating {
+  font-size: 18px;
+  color: #212529;
+}
+
+.testimonials-section {
+  text-align: center;
+}
+
+/* Index - Equipment */
+
+.equipments {
+  background: var(--site-color-1);
+}
+
+.equipments h1 {
+  text-align: center;
+  color: var(--site-light);
+}
+
+.equipments h3 {
+  text-align: center;
+  color: var(--site-light);
+  background: var(--site-color-1);
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+.card-text {
+  font-size: 14px;
+  color: #666;
+}
+.card img {
+  width: 100%;
+}
+.card-body {
+  padding: 20px;
+}
+
+#features h1 {
+  text-align: center;
+  color: var(--site-light);
+  background: var(---site-highlight);
+}
+
+/* Footer */
+
+.footer {
+  background: var(--site-color-1);
+}
+
+.footer a {
+  color: var(--site-light);
+  text-decoration: none;
+}
+.footer a:hover {
+  color: var(--site-light);
+  text-decoration: underline;
+}
+
+footer a i {
+  color: var(--site-light);
+}
+
+footer ul li {
+  text-decoration: none;
+  color: var(--site-light);
+}
+
+.copyright {
+  background-color: var(--site-color-2);
+}
+
+/* Start of Services */
+
+.services-header {
+  background: url(../images/Services/slide-2.jpg) no-repeat center center/cover;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.services-header::before {
+  content: "";
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.services-header > * {
+  z-index: 10;
+}
+
+.services-header h1 {
+  color: var(--site-color-2);
+}
+
+.services-icons .card i {
+  color: var(--site-color-1);
+}
+
+.services-icons .card {
+  border: 5px solid var(--site-color-4);
+}
+
+.services-icons .card:hover {
+  background: var(--site-color-4);
+  color: var(--site-light);
+  cursor: pointer;
+}
+
+.services-doc {
+  background: url(../images/showcase.jpg) no-repeat center center/cover;
+}
+
+.services-doc h3 {
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--site-color-1);
+}
+
+/* End of Service */
+
+/* Doctors */
+
+/* Top */
+#top {
+  background: url(../images/Clinic1.jpg) no-repeat center center/cover;
+  height: 70vh;
+}
+#top .content h2 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* intro */
+.top-section {
+  padding-top: 5rem;
+  background: #04829c;
+  border-top-left-radius: 12rem;
+  min-height: 15rem;
+}
+/* Doctor Editor */
+#doctors {
+  background: url(../images/hospital-BG.jpg) no-repeat center center/cover;
+}
+#doctors h4,
+h6 {
+  text-align: center;
+}
+#doctors a {
+  text-decoration: none;
+  color: var(--site-dark);
+}
+/* Doctors Bio */
+#doctor-1 img {
+  width: 530px;
+  height: 560px;
+
+  border-radius: 10px;
+}
+
+/* Contact Editor */
+#top-section .container {
+  margin-top: 30px;
+  margin-bottom: 5rem;
+}
+#contact-us .btn {
+  background: var(--site-color-2);
+  color: var(--site-dark);
+  border: none;
+  cursor: pointer;
+}
+#contact-us .btn:hover {
+  color: var(--site-light);
+  background: var(--site-color-2);
+}
+#appointment-btn {
+  background: var(--site-highlight);
+  color: #fff;
+  border-radius: 30px;
+}
+
+.footer {
+  background: var(--site-color-4);
+}
+/* 88, 160, 241, 0.5 */
+
+/* url("../images/showcase.jpg") no-repeat center center/cover; */
+@media only screen and (min-width: 390px) and (max-width: 844px) {
+  #intro .top-section {
+    padding-top: 3rem;
+    background: #04829c;
+    border-top-left-radius: 12rem;
+    min-height: 20rem;
+  }
+  #intro .container {
+    margin-top: 10vh;
+    padding: 10%;
+  }
+
+  #doctor-1 img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* LOCATIONS BY FLORENCE GUTIERREZ css */
+
+#locations {
+  background-color: var(--site-light);
+}
+
+#locations .top {
+  background: url(../images/Services/slide-2.jpg) no-repeat center center/cover;
+  height: 50vh;
+  position: relative;
+  color: var(--site-light);
+}
+
+#locations .top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+#locations .top * {
+  z-index: 10;
+}
+
+#locations .card {
+  background-color: var(--site-light);
+  border-radius: 5px;
+  box-shadow: 0 8px 20px 0px var(--site-dark);
+}
+
+#locations .top span,
+#locations .top h2,
+#locations .top h1 {
+  color: var(--site-color-2);
+}
+
+#locations .card:hover {
+  border: 2px solid var(--site-color-1);
+}
+
+/* end of locations */
+
+/* Contact Us */
+#contact-us {
+  background: url(../images/BGContact.jpg) no-repeat center center/cover;
+}
+
+#features {
+  background: url(../images/BGpromo.jpg);
+}
+
+/* Booking Form */
+
+.booking-form-container header {
+  background: var(--site-color-4);
+  color: var(--site-light);
+}
+
+.booking-form-container .main-body {
+  background: var(--site-color-2);
+  border-radius: 30px;
+}
+
+.booking-form-container .submit-btn {
+  background: var(--site-highlight);
+  color: var(--site-light);
+
+  max-width: 30%;
+}
+
+.booking-form-container .submit-btn:hover {
+  background: var(--site-color-4);
+  color: var(--site-light);
+}
+
+.booking-form-main {
+  max-width: 50%;
+}
+
+/* Booking Form End*/
+
+/* Dashboard */
+.dashboard-header {
+  color: var(--site-color-2);
+}
+
+.dashboard-header span {
+  color: var(--site-light);
+}
+
+.dashboard-nav {
+  background: var(--site-color-3);
+  color: var(--site-light);
+}
+
+.dashboard-nav a {
+  color: var(--site-light);
+  text-decoration: none;
+}
+
+.dashboard-nav ul li a:hover {
+  background-color: var(---site-highlight);
+  color: var(--site-highlight);
+  text-decoration: none;
+}
+
+.dashboard-main {
+  background: var(--site-color-2);
+}
+
+#dashboard-user {
+  max-width: 50%;
+}
